@@ -1,4 +1,3 @@
-# atmprojesi
 import java.util.Scanner;
 
 public class Main {
@@ -20,12 +19,11 @@ public class Main {
             if(userName.equals("patika") && password.equals("dev123")){
                 System.out.println("Merhaba, Kodluyoruz bankasına hoşgeldiniz.");
                 do {
-                    System.out.println("Lütfen yapmak istediğiniz işlemi seçiniz.");
-                    System.out.println("" +
-                            "1- Para yatır\n" +
+                    System.out.println("1- Para yatırma\n" +
                             "2-Para çekme \n" +
                             "3-Para durumunu sorgulama \n" +
                             "4-Çıkış yap");
+                    System.out.println("Lütfen yapmak istediğiniz işlemi seçiniz.");
                     select = input.nextInt();
                     if(select ==1 ){
                         System.out.println("Para miktarı: ");
@@ -43,6 +41,7 @@ public class Main {
                         System.out.println("Bakiyeniz: " + balance);
                     }
                 } while (select != 4);
+                System.out.println("Tekrar görüşmek üzere. ");
                 break;
             } else {
                 right--;
